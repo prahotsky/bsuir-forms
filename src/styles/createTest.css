@@ -1,0 +1,19 @@
+.create-test-form {
+  display: flex;
+  flex-direction: column;
+}
+/*
+.test-name {
+  width: 50%;
+  align-self: center;
+}
+
+.summary {
+  width: 40%;
+  align-self: center;
+}
+
+.question {
+  width: 50%;
+  align-self: center;
+} */
