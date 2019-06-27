@@ -1,0 +1,13 @@
+.delete-item {
+  width: 50%;
+  margin: auto;
+}
+
+.delete-btn-2 {
+  color: lightgrey;
+  height: 30px !important;
+  width: 30px !important;
+  position: absolute;
+  right: 8px;
+  top: 5px;
+}

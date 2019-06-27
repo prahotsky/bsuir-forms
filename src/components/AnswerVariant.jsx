@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  TextField,
-  RadioGroup,
-  Radio,
-  FormLabel,
-  Checkbox
-} from "@material-ui/core";
+import { TextField, FormLabel, Checkbox } from "@material-ui/core";
 import { AddCircle, Delete } from "@material-ui/icons";
 
 const AnswerVariant = ({

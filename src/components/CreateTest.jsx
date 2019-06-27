@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
 import Question from "./Question";
 import { Container, TextField, Button, Snackbar } from "@material-ui/core";

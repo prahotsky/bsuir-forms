@@ -38,7 +38,7 @@ const Question = ({
 
   useEffect(() => {
     onAddAnswerToQuestion({ ...answers });
-  }, [answers]);
+  }, [answers, onAddAnswerToQuestion]);
 
   return (
     <div className="margin-left--medium">
