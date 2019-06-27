@@ -45,6 +45,22 @@
   padding: 10px;
 }
 
+.borders-green {
+  border: 1px solid green;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.borders-red {
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.non-clickable {
+  pointer-events: none;
+}
+
 .active {
   background: #163064;
 }
