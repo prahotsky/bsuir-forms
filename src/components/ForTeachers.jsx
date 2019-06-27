@@ -1,23 +1,34 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import "../styles/styles.css";
 import CreateTest from "./CreateTest";
+import DeleteTest from "./DeleteTest";
 
 const ForTeachers = () => {
+  const [view, setView] = useState(null);
   return (
     <>
       <ul className="index-menu">
-        <li>
+        <li
+          onClick={() => setView("create")}
+          className={view === "create" ? "active" : ""}
+        >
           <p>Создать тест</p>
         </li>
-        <li>
+        {/* <li
+          onClick={() => setView("edit")}
+          className={view === "edit" ? "active" : ""}
+        >
           <p>Редактировать тест</p>
-        </li>
-        <li>
+        </li> */}
+        <li
+          onClick={() => setView("delete")}
+          className={view === "delete" ? "active" : ""}
+        >
           <p>Удалить тест</p>
         </li>
       </ul>
-      <CreateTest />
+      {view === "create" && <CreateTest setView={setView} />}
+      {view === "delete" && <DeleteTest setView={setView} />}
     </>
   );
 };

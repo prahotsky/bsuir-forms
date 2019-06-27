@@ -1,4 +1,5 @@
 import { createStore, applyMiddleware, compose } from "redux";
+import { loadState, saveState } from "../store/localStorage";
 import rootReducer from "../reducers";
 import thunk from "redux-thunk";
 import { logger } from "redux-logger";
@@ -22,5 +23,12 @@ const composedEnhancers = compose(
 );
 
 export default function configureStore(initialState) {
-  return createStore(rootReducer, initialState, composedEnhancers);
+  const persistedState = loadState();
+  const store = createStore(rootReducer, persistedState, composedEnhancers);
+  store.subscribe(() => {
+    saveState({
+      tests: store.getState().tests
+    });
+  });
+  return store;
 }

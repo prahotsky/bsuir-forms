@@ -1,0 +1,50 @@
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.margin-left--medium {
+  margin-left: 20px;
+}
+
+.margin-left--large {
+  margin-left: 40px;
+}
+
+.margin-bottom--medium {
+  margin-bottom: 20px;
+}
+.margin-top--medium {
+  margin-top: 20px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.relative {
+  position: relative;
+}
+.pointer {
+  cursor: pointer;
+}
+.borders {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.active {
+  background: #163064;
+}

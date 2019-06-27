@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
 }
-/*
-.test-name {
+
+/* .test-name {
   width: 50%;
   align-self: center;
 }
@@ -11,9 +11,38 @@
 .summary {
   width: 40%;
   align-self: center;
-}
+} */
 
 .question {
   width: 50%;
-  align-self: center;
-} */
+}
+
+.add-btn {
+  color: lightgrey;
+  height: 40px !important;
+  width: 40px !important;
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+.delete-btn {
+  color: lightgrey;
+  height: 40px !important;
+  width: 40px !important;
+  position: absolute;
+  right: 60px;
+  top: 30px;
+}
+
+.answer-variant {
+  display: flex;
+  width: 98%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.create-test__btn {
+  margin-top: 20px!important;
+}
